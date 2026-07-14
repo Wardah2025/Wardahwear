@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="ورد.png" />
 
-  <title>Wardah - ওয়ারদাহ</title>
+  <title>Wardah - ওয়ারদাহ</title>
 
   <!-- FONT -->
   <style>
     @font-face {
-      font-family: 'Bornomala-Regular.ttf';
-      src: url('fonts/Bornomala-Regular.ttf') format('truetype');
+      font-family: 'Bornomala';
+      src: url('Bornomala-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Bornomala';
+      src: url('Bornomala-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
     }
 
     :root {
@@ -29,17 +39,16 @@
     }
 
     body {
-      font-family: 'Bornomala-Regular.ttf', sans-serif;
+      font-family: 'Bornomala', sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
 
-   <header>
-   <img src="img/png logo.png" class="logo">
-    <h1>Wardah - ওয়ারদাহ</h1>
-    <p class="tagline">"Elegance in Modesty"</p>
-</header>
+    header {
+      text-align: center;
+      padding: 30px 15px 20px;
+    }
 
     .logo {
       width: 120px;
@@ -60,6 +69,7 @@
       font-size: 1.1rem;
       opacity: 0.9;
     }
+
     main {
       padding: 20px 15px;
     }
@@ -77,6 +87,21 @@
 
     ul {
       padding-left: 18px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 0 15px 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      display: block;
     }
 
     .price {
@@ -107,15 +132,15 @@
 
   <!-- HEADER -->
   <header>
-   <img src="img/ png logo.png" class=>
-    <h1>Wardah - ওয়ারদাহ</h1>
+    <img src="png%20logo.png" class="logo" alt="Wardah Logo">
+    <h1>Wardah - ওয়ারদাহ</h1>
     <p class="tagline">"Elegance in Modesty"</p>
   </header>
 
   <!-- GALLERY -->
   <div class="gallery">
-    <img src="img/product/Three-pices.jpg" alt="Product 1">
-    <img src="img/product/Three-pices (1).jpg" alt="Product 2">
+    <img src="Three-pices.jpg" alt="Product 1">
+    <img src="Three-pices%20(1).jpg" alt="Product 2">
   </div>
 
   <!-- CONTENT -->
@@ -123,15 +148,15 @@
 
     <section>
       <h2>এলিগ্যান্ট আনস্টিচড থ্রিপিস</h2>
-      <p><strong>আরাম, সৌন্দর্য ও শালীনতার নিখুঁত সমন্বয়।</strong></p>
+      <p><strong>আরাম, সৌন্দর্য ও শালীনতার নিখুঁত সমন্বয়।</strong></p>
     </section>
 
     <section class="card">
       <h2>থ্রিপিসের বিবরণ</h2>
       <ul>
-        <li>ফেব্রিক: প্রিমিয়াম কটন</li>
-        <li>ডিজাইন: স্টাইলিশ প্রিন্ট ও এমব্রয়ডারি</li>
-        <li>প্যাকেজ: কামিজ, সালোয়ার ও ওড়না</li>
+        <li>ফেব্রিক: প্রিমিয়াম কটন</li>
+        <li>ডিজাইন: স্টাইলিশ প্রিন্ট ও এমব্রয়ডারি</li>
+        <li>প্যাকেজ: কামিজ, সালোয়ার ও ওড়না</li>
         <li>ধরণ: আনস্টিচড থ্রিপিস</li>
       </ul>
     </section>
@@ -154,7 +179,7 @@
     <section class="card">
       <h2>ডেলিভারি চার্জ</h2>
       <ul>
-        <li>ঢাকায়: ৭০ টাকা</li>
+        <li>ঢাকায়: ৭০ টাকা</li>
         <li>ঢাকার বাইরে: ১২০ টাকা</li>
       </ul>
     </section>
